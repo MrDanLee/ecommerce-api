@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'E-Commerce API funcionando',
+    message: 'E-Commerce API is running',
     version: '1.0.0',
     author: 'Daniel Lozano',
     endpoints: {
@@ -31,9 +31,9 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 
 app.use((err, req, res, next) => {
-  console.error(err);
+  console.error('Error:', err.message);
   res.status(err.statusCode || 500).json({
-    error: err.message || 'Error del servidor'
+    error: err.message || 'Server error'
   });
 });
 
