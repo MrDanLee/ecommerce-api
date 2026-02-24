@@ -186,7 +186,6 @@ Authorization: Bearer {your_token_here}
 Daniel Andrés Lozano Meriño
 - GitHub: [@MrDanLee](https://github.com/MrDanLee)
 - Email: daniel23lozano@gmail.com
-- Portfolio: [mrdanlee.github.io](https://mrdanlee.github.io)
 
 ## 📝 License
 
